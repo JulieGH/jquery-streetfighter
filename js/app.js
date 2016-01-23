@@ -31,15 +31,27 @@ $(document).ready(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 		// ryu goes back to his ready position
-	})
+	});
 
-	.keydown(function(e) {
-		if (e.keyCode == 88) {
-			// $('ryu-ready').hide();
-			// $('ruy-cool').show();
-			alert('x');
-		};
-	})
+
+	$(document).keydown(function(e){
+
+		if(e.keyCode ==88) {
+			$('.ryu-ready').hide();
+			$('.ryu-cool').show();
+		}
+	}).keyup(function(e){
+
+		if(e.keyCode == 88){
+			$('.ryu-ready').show();
+			$('.ryu-cool').hide();
+
+		}
+	});
+
+
+
+	
 
 });
 

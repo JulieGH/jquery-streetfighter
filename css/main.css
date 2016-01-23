@@ -13,8 +13,10 @@ body {
 }
 
 .ryu {
-	width: 659px;
-	height: 494px;
+	/*width: 659px;
+	height: 494px;*/
+	max-width: 50%;
+	float: left;
 
 }
 
@@ -59,20 +61,23 @@ body {
 	float: left;
 }
 
-.ryu {
+/*.ryu {
 	border: solid 1px red;
-}
+}*/
 
 p {
 	color: red;
 	font-size: 24px;
 	line-height: 45px;
+	text-align: center;
+	padding-top: 40px;
 }
 
 .instructions {
 	width: 50%;
 	float: right;
 	border: solid 1px red;
+	/*margin-top: 40px;*/
 }
 
 
